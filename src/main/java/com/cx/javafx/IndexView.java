@@ -14,11 +14,9 @@ import java.io.IOException;
  * @author 陈翔
  */
 public class IndexView {
-
     static Stage stage;
     public static Parent root;
     public static Scene scene;
-
     public static void start(final Stage primaryStage) throws IOException{
         stage = primaryStage;
         root = FXMLLoader.load(IndexView.class.getResource("./index.fxml"));
@@ -27,7 +25,6 @@ public class IndexView {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
 }
 
 

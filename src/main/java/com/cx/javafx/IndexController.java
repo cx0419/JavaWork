@@ -16,35 +16,26 @@ import javafx.stage.Stage;
  * @author 陈翔
  */
 public class IndexController {
-
     @FXML
     private Text text;
-
-
     @FXML
     private MenuItem openFile;
-
     @FXML
     private Rectangle rectangle;
-
-
     @FXML
     private Button jiaCu;
-
     @FXML
     private Button xieXian;
-
-
-
     public void initialize(){
-
         rectangle.setOnMouseClicked( new EventHandler<MouseEvent>() {
+            @Override
             public void handle(MouseEvent me) {
                 text.setText(me.getX() + "," + me.getY());
             }
         });
         openFile.setOnAction(new EventHandler<ActionEvent>(){
 
+            @Override
             public void handle(ActionEvent event) {
                 FileChooser fileChooser = new FileChooser();
                 fileChooser.setTitle("打开");
@@ -52,17 +43,16 @@ public class IndexController {
             }
         });
         jiaCu.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
             public void handle(ActionEvent event) {
-                text.setStyle("-fx-font-weight:bold");
-
+                text.setStyle("-fx-border-color:rgb(0,224,255)");
             }
         });
         xieXian.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
             public void handle(ActionEvent event) {
-                text.setStyle("-fx-font-style:italic");
+                text.setStyle("-fx-border-color:rgb(255,229,0)");
             }
         });
     }
-
-
 }
