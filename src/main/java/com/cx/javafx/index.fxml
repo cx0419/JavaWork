@@ -28,7 +28,6 @@
       <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#c6d5e4" height="244.0" layoutX="51.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="457.0" />
       <Button fx:id="blue" layoutX="51.0" layoutY="342.0" mnemonicParsing="false" text="蓝色字体" />
       <Button fx:id="yellow" layoutX="364.0" layoutY="342.0" mnemonicParsing="false" text="黄色字体" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fx:id="text" layoutX="181.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="厚德载物,天道酬勤" wrappingWidth="182.3330078125" />
+      <Label fx:id="text" layoutX="205.0" layoutY="188.0" text="厚德载物,天道酬勤" />
    </children>
 </AnchorPane>

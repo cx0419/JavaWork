@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
@@ -17,7 +18,7 @@ import javafx.stage.Stage;
  */
 public class IndexController {
     @FXML
-    private Text text;
+    private Label text;
     @FXML
     private MenuItem openFile;
     @FXML
@@ -42,16 +43,16 @@ public class IndexController {
                 fileChooser.showOpenDialog(new Stage());
             }
         });
-        blue.setOnAction(new EventHandler<ActionEvent>(){
+        blue.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
-            public void handle(ActionEvent event) {
-                text.setStyle("-fx-color:Blue;");
+            public void handle(MouseEvent event) {
+                text.setStyle("-fx-text-fill:Blue;");
             }
         });
-        yellow.setOnAction(new EventHandler<ActionEvent>(){
+        yellow.setOnMouseClicked(new EventHandler<MouseEvent>(){
             @Override
-            public void handle(ActionEvent event) {
-                text.setStyle("-fx-color:Yellow;");
+            public void handle(MouseEvent event) {
+                text.setStyle("-fx-text-fill:Yellow;");
             }
         });
     }
