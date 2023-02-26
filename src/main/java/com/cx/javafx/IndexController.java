@@ -23,9 +23,9 @@ public class IndexController {
     @FXML
     private Rectangle rectangle;
     @FXML
-    private Button jiaCu;
+    private Button blue;
     @FXML
-    private Button xieXian;
+    private Button yellow;
     public void initialize(){
         rectangle.setOnMouseClicked( new EventHandler<MouseEvent>() {
             @Override
@@ -42,13 +42,13 @@ public class IndexController {
                 fileChooser.showOpenDialog(new Stage());
             }
         });
-        jiaCu.setOnAction(new EventHandler<ActionEvent>(){
+        blue.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent event) {
                 text.setStyle("-fx-border-color:rgb(0,224,255)");
             }
         });
-        xieXian.setOnAction(new EventHandler<ActionEvent>(){
+        yellow.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent event) {
                 text.setStyle("-fx-border-color:rgb(255,229,0)");
