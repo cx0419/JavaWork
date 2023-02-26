@@ -45,13 +45,13 @@ public class IndexController {
         blue.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent event) {
-                text.setStyle("-fx-border-color:rgb(0,224,255)");
+                text.setStyle("-fx-color:Blue;");
             }
         });
         yellow.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent event) {
-                text.setStyle("-fx-border-color:rgb(255,229,0)");
+                text.setStyle("-fx-color:Yellow;");
             }
         });
     }
