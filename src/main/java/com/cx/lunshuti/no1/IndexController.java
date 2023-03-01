@@ -1,4 +1,4 @@
-package com.cx.javafx;
+package com.cx.lunshuti.no1;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -9,7 +9,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 

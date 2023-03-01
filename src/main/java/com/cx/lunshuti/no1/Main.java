@@ -1,4 +1,4 @@
-package com.cx.javafx;
+package com.cx.lunshuti.no1;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
