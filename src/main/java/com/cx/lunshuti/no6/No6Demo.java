@@ -59,7 +59,6 @@ public class No6Demo {
 
     public static void main(String[] args) throws IOException {
         StringBuffer stringBuffer = No6Demo.readAll();
-        System.out.println(stringBuffer);
         List<News> list = No6Demo.readData(stringBuffer);
         No6Demo.save(list);
         for (Object o : list) {
